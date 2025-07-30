@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Spacian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="space-bg"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-image">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="#ff59e6" stroke-width="2"/>
+                        <circle cx="20" cy="20" r="8" fill="#ff59e6"/>
+                        <circle cx="20" cy="8" r="2" fill="#ffffff"/>
+                        <circle cx="32" cy="20" r="2" fill="#ffffff"/>
+                        <circle cx="8" cy="20" r="2" fill="#ffffff"/>
+                    </svg>
+                </div>
+                <div class="logo-text">SPACIAN</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">ゲーム×宇宙の新体験について、お気軽にご相談ください</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h2 class="form-title">お問い合わせフォーム</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="inquiryType" class="form-label">お問い合わせ種別 *</label>
+                                <select id="inquiryType" name="inquiryType" class="form-input" required>
+                                    <option value="">選択してください</option>
+                                    <option value="business">取材・提携について</option>
+                                    <option value="recruitment">採用について</option>
+                                    <option value="development">開発協力について</option>
+                                    <option value="community">コミュニティ参加について</option>
+                                    <option value="bug">バグ報告</option>
+                                    <option value="feature">機能要望</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">姓 *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">名 *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">会社名・団体名</label>
+                                <input type="text" id="company" name="company" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">メールアドレス *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">電話番号</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">件名 *</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">お問い合わせ内容 *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" required placeholder="具体的な内容をお聞かせください"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    <a href="#" class="privacy-link">プライバシーポリシー</a>に同意します *
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Spacianからのニュースレターを受け取る
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">送信する</span>
+                                <span class="btn-icon">🚀</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <div class="contact-info-card">
+                            <h3 class="info-card-title">直接ご連絡</h3>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <div class="info-icon">📧</div>
+                                    <div class="info-content">
+                                        <div class="info-label">メール</div>
+                                        <a href="mailto:hello@spacian.example.com" class="info-link">hello@spacian.example.com</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">📍</div>
+                                    <div class="info-content">
+                                        <div class="info-label">所在地</div>
+                                        <div class="info-text">東京都杉並区西荻南3-19-17<br>トレスエルマーナ203</div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">🕒</div>
+                                    <div class="info-content">
+                                        <div class="info-label">営業時間</div>
+                                        <div class="info-text">平日 10:00 - 18:00<br>（土日祝日を除く）</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <h3 class="info-card-title">SNS・コミュニティ</h3>
+                            <div class="social-grid">
+                                <a href="https://twitter.com/SpacianOfficial" class="social-card twitter">
+                                    <div class="social-icon">𝕏</div>
+                                    <div class="social-name">Twitter/X</div>
+                                    <div class="social-desc">最新情報をお届け</div>
+                                </a>
+                                <a href="https://note.com/spacian" class="social-card note">
+                                    <div class="social-icon">📝</div>
+                                    <div class="social-name">note</div>
+                                    <div class="social-desc">開発ブログ</div>
+                                </a>
+                                <a href="https://instagram.com/spacian_official" class="social-card instagram">
+                                    <div class="social-icon">📷</div>
+                                    <div class="social-name">Instagram</div>
+                                    <div class="social-desc">ビジュアルコンテンツ</div>
+                                </a>
+                                <a href="https://discord.gg/spacian" class="social-card discord">
+                                    <div class="social-icon">💬</div>
+                                    <div class="social-name">Discord</div>
+                                    <div class="social-desc">開発コミュニティ</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card discord-special">
+                            <h3 class="info-card-title">🚀 Discord開発コミュニティに参加しませんか？</h3>
+                            <p class="discord-description">
+                                Spacianの開発プロセスを間近で見て、フィードバックを提供し、
+                                同じ志を持つ仲間と交流しませんか？
+                            </p>
+                            <ul class="discord-benefits">
+                                <li>✨ 新機能の先行体験</li>
+                                <li>🗣️ 開発チームとの直接対話</li>
+                                <li>🎮 β版テストへの参加権</li>
+                                <li>🎁 限定グッズプレゼント</li>
+                                <li>📝 アイデア提案・フィードバック</li>
+                            </ul>
+                            <a href="https://discord.gg/spacian" class="discord-join-btn">
+                                <span class="btn-icon">💬</span>
+                                <span class="btn-text">Discordに参加する</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spacian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // フォーム送信処理
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 簡単なバリデーション
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#ff4444';
+                } else {
+                    field.style.borderColor = 'rgba(255, 89, 230, 0.3)';
+                }
+            });
+            
+            if (isValid) {
+                // 送信ボタンを無効化
+                const submitBtn = this.querySelector('.submit-btn');
+                submitBtn.innerHTML = '<span class="btn-text">送信中...</span><span class="btn-icon">⏳</span>';
+                submitBtn.disabled = true;
+                
+                // 実際の送信処理をここに実装
+                setTimeout(() => {
+                    alert('お問い合わせを受け付けました。ありがとうございます！');
+                    this.reset();
+                    submitBtn.innerHTML = '<span class="btn-text">送信する</span><span class="btn-icon">🚀</span>';
+                    submitBtn.disabled = false;
+                }, 2000);
+            } else {
+                alert('必須項目を入力してください。');
+            }
+        });
+    </script>
+</body>
+</html>

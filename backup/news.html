@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Spacian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="space-bg"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-image">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="#ff59e6" stroke-width="2"/>
+                        <circle cx="20" cy="20" r="8" fill="#ff59e6"/>
+                        <circle cx="20" cy="8" r="2" fill="#ffffff"/>
+                        <circle cx="32" cy="20" r="2" fill="#ffffff"/>
+                        <circle cx="8" cy="20" r="2" fill="#ffffff"/>
+                    </svg>
+                </div>
+                <div class="logo-text">SPACIAN</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="news.html" class="active">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">News & Updates</h1>
+                <p class="page-subtitle">Spacianの最新情報をお届け</p>
+            </div>
+        </section>
+
+        <section class="news-content">
+            <div class="container">
+                <div class="news-filters">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="rulette">Rulette</button>
+                    <button class="filter-btn" data-filter="lemo">Project: LEMO</button>
+                    <button class="filter-btn" data-filter="company">会社情報</button>
+                    <button class="filter-btn" data-filter="event">イベント</button>
+                </div>
+
+                <div class="news-articles">
+                    <article class="news-article featured" data-category="rulette">
+                        <div class="article-header">
+                            <time class="article-date">2025年7月25日</time>
+                            <span class="article-category">Rulette</span>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">Rulette「テーマ別おすすめ」機能リリース🎉</h2>
+                            <div class="article-image">
+                                <div class="placeholder-image">
+                                    <span>📚 Rulette Update</span>
+                                </div>
+                            </div>
+                            <p class="article-excerpt">
+                                人気テーマと新作ゲームを組み合わせたレコメンドリストを公開しました。
+                                戦略系、パーティ系、協力系など、様々なカテゴリから好みのゲームを見つけやすくなりました。
+                            </p>
+                            <div class="article-body">
+                                <p>
+                                    この度、Ruletteに新機能「テーマ別おすすめ」をリリースいたしました。
+                                    ユーザーの皆様からのご要望にお応えし、より直感的にボードゲームを探せるようになりました。
+                                </p>
+                                <h3>新機能の特徴</h3>
+                                <ul>
+                                    <li>10以上のテーマカテゴリで分類</li>
+                                    <li>AIによる個別レコメンド</li>
+                                    <li>プレイ人数・時間での絞り込み</li>
+                                    <li>コミュニティ評価との連動</li>
+                                </ul>
+                                <p>
+                                    今後も皆様のボードゲームライフをより豊かにする機能を追加してまいります。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-article" data-category="lemo">
+                        <div class="article-header">
+                            <time class="article-date">2025年7月10日</time>
+                            <span class="article-category">Project: LEMO</span>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">Project: LEMO β版クローズドテスト開始🛸</h2>
+                            <div class="article-image">
+                                <div class="placeholder-image">
+                                    <span>🎮 LEMO Beta</span>
+                                </div>
+                            </div>
+                            <p class="article-excerpt">
+                                新ミッション「星間トレジャー」を実装しました。テスター募集をスタートしています。
+                                限定50名様に先行プレイの機会をご提供いたします。
+                            </p>
+                            <div class="article-body">
+                                <p>
+                                    Project: LEMOのβ版テストを開始いたします。今回は新ミッション「星間トレジャー」を含む
+                                    5つのゲームをお楽しみいただけます。
+                                </p>
+                                <h3>テスト内容</h3>
+                                <ul>
+                                    <li>5タイトルのゲームプレイテスト</li>
+                                    <li>マルチプレイヤー機能の検証</li>
+                                    <li>UI/UXフィードバック収集</li>
+                                    <li>バランス調整のためのデータ収集</li>
+                                </ul>
+                                <p>
+                                    テスター募集は<a href="contact.html">お問い合わせフォーム</a>から応募可能です。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-article" data-category="event">
+                        <div class="article-header">
+                            <time class="article-date">2025年6月30日</time>
+                            <span class="article-category">イベント</span>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">Lemo's Lounge オフラインイベント決定✨</h2>
+                            <div class="article-image">
+                                <div class="placeholder-image">
+                                    <span>🎉 Event</span>
+                                </div>
+                            </div>
+                            <p class="article-excerpt">
+                                都内会場で"Lemo"と遊ぶナイトを開催。一般参加受付中です。
+                                ボードゲーム体験とデジタルゲームの融合を実際に体験していただけます。
+                            </p>
+                            <div class="article-body">
+                                <p>
+                                    8月15日（木）19:00〜22:00、渋谷の会場にてオフラインイベントを開催いたします。
+                                </p>
+                                <h3>イベント内容</h3>
+                                <ul>
+                                    <li>Project: LEMO デモプレイ</li>
+                                    <li>ボードゲーム大会</li>
+                                    <li>開発チームとの交流会</li>
+                                    <li>限定グッズプレゼント</li>
+                                </ul>
+                                <p>
+                                    参加費は無料、軽食・ドリンクもご用意しております。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-article" data-category="company">
+                        <div class="article-header">
+                            <time class="article-date">2025年6月15日</time>
+                            <span class="article-category">会社情報</span>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">Spacian設立1周年記念🎊</h2>
+                            <div class="article-image">
+                                <div class="placeholder-image">
+                                    <span>🏢 Company</span>
+                                </div>
+                            </div>
+                            <p class="article-excerpt">
+                                おかげさまでSpacian設立から1年が経ちました。
+                                この1年間のご支援に心より感謝申し上げます。
+                            </p>
+                            <div class="article-body">
+                                <p>
+                                    2024年6月15日の設立から1年、皆様のおかげで様々なプロジェクトを
+                                    進めることができました。
+                                </p>
+                                <h3>この1年の成果</h3>
+                                <ul>
+                                    <li>Ruletteプラットフォームの正式リリース</li>
+                                    <li>Project: LEMO開発開始</li>
+                                    <li>コミュニティメンバー1000人突破</li>
+                                    <li>パートナー企業との連携開始</li>
+                                </ul>
+                                <p>
+                                    2年目もさらなる挑戦を続けてまいります。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-article" data-category="rulette">
+                        <div class="article-header">
+                            <time class="article-date">2025年5月20日</time>
+                            <span class="article-category">Rulette</span>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">Rulette登録ゲーム数1000タイトル達成📚</h2>
+                            <div class="article-image">
+                                <div class="placeholder-image">
+                                    <span>🎯 Milestone</span>
+                                </div>
+                            </div>
+                            <p class="article-excerpt">
+                                Ruletteのゲームデータベースが1000タイトルを突破しました。
+                                国内外の様々なボードゲームを網羅しております。
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>← 前へ</button>
+                    <span class="pagination-info">1 / 3</span>
+                    <button class="pagination-btn">次へ →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spacian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // ニュースフィルター機能
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const articles = document.querySelectorAll('.news-article');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // アクティブボタンの切り替え
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // 記事のフィルタリング
+                    articles.forEach(article => {
+                        const category = article.getAttribute('data-category');
+                        if (filter === 'all' || filter === category) {
+                            article.style.display = 'block';
+                        } else {
+                            article.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

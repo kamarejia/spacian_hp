@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  body {
+    @apply antialiased;
+    font-family: 'Orbitron', 'Exo 2', 'Helvetica Neue', Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-space-pink to-space-pink-dark bg-clip-text text-transparent;
+  }
+  
+  .space-glow {
+    filter: drop-shadow(0 0 10px rgba(255, 89, 230, 0.5));
+  }
+  
+  .space-border {
+    @apply border border-space-pink/30 bg-space-pink/10;
+  }
+  
+  .space-button {
+    @apply bg-gradient-to-r from-space-pink to-space-pink-dark text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-space-pink/30 hover:-translate-y-1;
+  }
+  
+  .discord-button {
+    @apply bg-gradient-to-r from-space-blue to-space-blue-light text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-space-blue/30 hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(255, 89, 230, 0.5);
+  }
+}
+
+/* カスタムアニメーション */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* スクロールバーのカスタマイズ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-space-pink/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-space-pink/70;
+}
