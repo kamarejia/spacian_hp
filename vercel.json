@@ -1,23 +1,10 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next@latest"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "$1"
-    }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
   "functions": {
     "app/**/*.{js,ts,jsx,tsx}": {
       "maxDuration": 30
     }
+  },
+  "env": {
+    "NODE_ENV": "production"
   }
 }
