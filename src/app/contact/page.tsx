@@ -80,8 +80,8 @@ export default function ContactPage() {
                     <HiEnvelope className="text-2xl text-space-pink" />
                     <div>
                       <div className="text-space-pink font-bold text-sm">{t('contact.email.title')}</div>
-                      <a href="mailto:ajia.watabe@gmail.com" className="text-white hover:text-space-pink transition-colors">
-                        ajia.watabe@gmail.com
+                      <a href="mailto:contact@spacian.jp" className="text-white hover:text-space-pink transition-colors">
+                        contact@spacian.jp
                       </a>
                     </div>
                   </div>

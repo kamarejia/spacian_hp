@@ -67,10 +67,10 @@ export default function Contact() {
                   <div>
                     <div className="text-space-pink font-bold mb-1">{t('contact.home.email.title')}</div>
                     <a 
-                      href="mailto:ajia.watabe@gmail.com"
+                      href="mailto:contact@spacian.jp"
                       className="text-white hover:text-space-pink transition-colors duration-300"
                     >
-                      ajia.watabe@gmail.com
+                      contact@spacian.jp
                     </a>
                   </div>
                 </div>
