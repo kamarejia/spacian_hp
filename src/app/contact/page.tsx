@@ -1,9 +1,12 @@
 'use client'
 
+import { useState } from 'react'
 import { 
   HiEnvelope, 
   HiOutlineDocumentText, 
-  HiRocketLaunch
+  HiRocketLaunch,
+  HiClipboard,
+  HiCheck
 } from 'react-icons/hi2'
 import { FaXTwitter, FaInstagram } from 'react-icons/fa6'
 import { socialLinks as globalSocialLinks } from '@/lib/social-links'
@@ -20,6 +23,17 @@ interface SocialLink {
 
 export default function ContactPage() {
   const { t } = useLanguage()
+  const [emailCopied, setEmailCopied] = useState(false)
+  
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText('contact@spacian.jp')
+      setEmailCopied(true)
+      setTimeout(() => setEmailCopied(false), 2000)
+    } catch (err) {
+      console.error('Failed to copy email:', err)
+    }
+  }
   
   const socialLinks: { [key: string]: SocialLink[] } = {
     rulette: [
@@ -80,9 +94,22 @@ export default function ContactPage() {
                     <HiEnvelope className="text-2xl text-space-pink" />
                     <div>
                       <div className="text-space-pink font-bold text-sm">{t('contact.email.title')}</div>
-                      <a href="mailto:contact@spacian.jp" className="text-white hover:text-space-pink transition-colors">
-                        contact@spacian.jp
-                      </a>
+                      <div className="flex items-center gap-3">
+                        <a href="mailto:contact@spacian.jp" className="text-white hover:text-space-pink transition-colors">
+                          contact@spacian.jp
+                        </a>
+                        <button
+                          onClick={copyEmail}
+                          className="p-1.5 rounded-lg bg-space-pink/10 hover:bg-space-pink/20 transition-colors duration-300 group"
+                          title={emailCopied ? 'コピーしました！' : 'メールアドレスをコピー'}
+                        >
+                          {emailCopied ? (
+                            <HiCheck className="w-3.5 h-3.5 text-green-400" />
+                          ) : (
+                            <HiClipboard className="w-3.5 h-3.5 text-space-pink group-hover:scale-110 transition-transform duration-300" />
+                          )}
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
