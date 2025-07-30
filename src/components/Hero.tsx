@@ -25,9 +25,9 @@ export default function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex justify-end">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h1 className="font-orbitron text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 md:mb-8">
-              <span className="gradient-text text-shadow-glow">
-                {t('hero.title')}
+            <h1 className="font-orbitron text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 md:mb-8">
+              <span className="gradient-text text-shadow-glow whitespace-pre-line">
+                {t('hero.title.mobile')}
               </span>
             </h1>
             

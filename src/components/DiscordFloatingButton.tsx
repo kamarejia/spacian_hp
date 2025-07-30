@@ -31,13 +31,14 @@ export default function DiscordFloatingButton() {
         aria-label="Discord開発コミュニティに参加"
       >
         <div className="relative">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-r from-space-blue to-space-blue-light shadow-2xl shadow-space-blue/50 hover:shadow-space-blue/70 transition-all duration-300 flex items-center justify-center group-hover:scale-110">
+          <div className="w-20 h-20 rounded-full bg-gradient-to-r from-space-blue to-space-blue-light shadow-2xl shadow-space-blue/50 hover:shadow-space-blue/70 transition-all duration-300 flex items-center justify-center group-hover:scale-110">
             <Image
               src="/images/icons/discordlemo.webp"
               alt="Discord LEMO"
-              width={40}
-              height={40}
+              width={62}
+              height={62}
               className="rounded-full"
+              style={{ transform: 'translateX(1px)' }}
             />
           </div>
           
@@ -87,6 +88,7 @@ export default function DiscordFloatingButton() {
                   width={48}
                   height={48}
                   className="w-full h-full object-cover rounded-full"
+                  style={{ transform: 'translateX(1px)' }}
                 />
               </div>
               <h2 className="text-2xl font-bold text-space-blue mb-2 flex items-center justify-center gap-2">
@@ -95,19 +97,21 @@ export default function DiscordFloatingButton() {
               </h2>
             </div>
             
-            {/* Description */}
-            <p className="text-gray-300 text-center mb-6 leading-relaxed">
-              {t('discord.description')}
+            {/* Encouragement Message */}
+            <p className="text-white text-center text-base mb-6">
+              {t('discord.message')}
             </p>
             
             {/* Benefits */}
-            <div className="space-y-3 mb-8">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center gap-3 text-white">
-                  <benefit.icon className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                  <span className="text-sm">{t(benefit.textKey)}</span>
-                </div>
-              ))}
+            <div className="mb-8 flex justify-center">
+              <div className="space-y-4">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center gap-3 text-white">
+                    <benefit.icon className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                    <span className="text-base font-medium">{t(benefit.textKey)}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             
             {/* CTA Button */}

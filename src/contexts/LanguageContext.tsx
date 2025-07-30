@@ -36,6 +36,11 @@ const translations: TranslationData = {
     en: 'From Subculture to Mainstream: Board Games for Everyone',
     de: 'Von der Subkultur zum Mainstream: Brettspiele für alle' 
   },
+  'hero.title.mobile': { 
+    ja: 'ボードゲームをサブカルから\nメインカルチャーへ', 
+    en: 'From Subculture to Mainstream:\nBoard Games for Everyone',
+    de: 'Von der Subkultur zum Mainstream:\nBrettspiele für alle' 
+  },
   'hero.subtitle': { 
     ja: '「Rulette」でボードゲームの楽しさを深掘りし、「Project: LEMO」でデジタルの世界へ飛び出す。', 
     en: 'Dive deep into board game fun with "Rulette" and leap into the digital world with "Project: LEMO".',
@@ -293,14 +298,14 @@ const translations: TranslationData = {
   // Discord Floating Button
   'discord.tooltip': { ja: 'Discord開発コミュニティ', en: 'Discord Dev Community', de: 'Discord-Entwickler-Community' },
   'discord.title': { ja: 'Discord開発コミュニティ', en: 'Discord Dev Community', de: 'Discord-Entwickler-Community' },
-  'discord.description': { 
-    ja: '開発プロセスを間近で見て、フィードバックを提供し、\n同じ志を持つ仲間と交流しませんか？', 
-    en: 'Watch the development process up close, provide feedback,\nand connect with like-minded people.', 
-    de: 'Beobachten Sie den Entwicklungsprozess aus nächster Nähe, geben Sie Feedback\nund vernetzen Sie sich mit Gleichgesinnten.' 
+  'discord.message': { 
+    ja: 'あなたの「面白そう！」が助けになります✨', 
+    en: 'Your "That sounds interesting!" helps us✨', 
+    de: 'Ihr "Das klingt interessant!" hilft uns✨' 
   },
   'discord.benefit1': { ja: '新機能の先行体験', en: 'Early access to new features', de: 'Früher Zugang zu neuen Funktionen' },
-  'discord.benefit2': { ja: '開発チームとの直接対話', en: 'Direct dialogue with dev team', de: 'Direkter Dialog mit dem Entwicklungsteam' },
-  'discord.benefit3': { ja: 'β版テストへの参加権', en: 'Beta testing participation', de: 'Teilnahme an Beta-Tests' },
+  'discord.benefit2': { ja: '開発チームへのフィードバック', en: 'Feedback to dev team', de: 'Feedback an das Entwicklungsteam' },
+  'discord.benefit3': { ja: 'β版テストへのご招待', en: 'Beta testing invitation', de: 'Einladung zu Beta-Tests' },
   'discord.join': { ja: '参加する', en: 'Join Now', de: 'Jetzt beitreten' },
 }
 

@@ -2,15 +2,12 @@
 
 import { 
   HiEnvelope, 
-  HiOutlineDocumentText, 
-  HiChatBubbleLeftRight, 
-  HiRocketLaunch, 
-  HiSparkles, 
-  HiPuzzlePiece 
+  HiOutlineDocumentText
 } from 'react-icons/hi2'
 import { FaXTwitter, FaInstagram } from 'react-icons/fa6'
 import { socialLinks } from '@/lib/social-links'
 import { useLanguage } from '@/contexts/LanguageContext'
+import DiscordCommunity from './DiscordCommunity'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface SocialLink {
@@ -47,11 +44,6 @@ export default function Contact() {
     }
   ]
 
-  const discordBenefitsKeys = [
-    { icon: HiSparkles, textKey: 'contact.home.discord.benefit1' },
-    { icon: HiChatBubbleLeftRight, textKey: 'contact.home.discord.benefit2' },
-    { icon: HiPuzzlePiece, textKey: 'contact.home.discord.benefit3' }
-  ]
 
   return (
     <section className="py-24">
@@ -124,31 +116,7 @@ export default function Contact() {
             ))}
             
             {/* Discord Community */}
-            <div className="bg-gradient-to-br from-space-blue/10 to-space-blue-light/10 border border-space-blue rounded-xl p-6">
-              <h4 className="text-space-blue font-bold text-lg mb-4 flex items-center justify-center gap-2">
-                <HiRocketLaunch className="w-5 h-5" /> {t('contact.home.discord.title')}
-              </h4>
-              <p className="text-gray-300 text-sm mb-6 leading-relaxed whitespace-pre-line">
-                {t('contact.home.discord.description')}
-              </p>
-              <ul className="text-white text-sm space-y-2 mb-6">
-                {discordBenefitsKeys.map((benefit, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    <benefit.icon className="w-4 h-4 text-yellow-400" /> {t(benefit.textKey)}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={socialLinks.discord}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="discord-button w-full flex items-center justify-center gap-2"
-              >
-                <HiChatBubbleLeftRight className="w-5 h-5" />
-                <span>{t('contact.home.discord.join')}</span>
-                <span>→</span>
-              </a>
-            </div>
+            <DiscordCommunity />
           </div>
         </div>
       </div>
