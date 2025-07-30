@@ -289,6 +289,19 @@ const translations: TranslationData = {
   'common.developing': { ja: '開発中', en: 'In Development', de: 'In Entwicklung' },
   'common.beta': { ja: 'β版', en: 'Beta', de: 'Beta' },
   'common.comingSoon': { ja: '近日公開', en: 'Coming Soon', de: 'Demnächst verfügbar' },
+  
+  // Discord Floating Button
+  'discord.tooltip': { ja: 'Discord開発コミュニティ', en: 'Discord Dev Community', de: 'Discord-Entwickler-Community' },
+  'discord.title': { ja: 'Discord開発コミュニティ', en: 'Discord Dev Community', de: 'Discord-Entwickler-Community' },
+  'discord.description': { 
+    ja: '開発プロセスを間近で見て、フィードバックを提供し、\n同じ志を持つ仲間と交流しませんか？', 
+    en: 'Watch the development process up close, provide feedback,\nand connect with like-minded people.', 
+    de: 'Beobachten Sie den Entwicklungsprozess aus nächster Nähe, geben Sie Feedback\nund vernetzen Sie sich mit Gleichgesinnten.' 
+  },
+  'discord.benefit1': { ja: '新機能の先行体験', en: 'Early access to new features', de: 'Früher Zugang zu neuen Funktionen' },
+  'discord.benefit2': { ja: '開発チームとの直接対話', en: 'Direct dialogue with dev team', de: 'Direkter Dialog mit dem Entwicklungsteam' },
+  'discord.benefit3': { ja: 'β版テストへの参加権', en: 'Beta testing participation', de: 'Teilnahme an Beta-Tests' },
+  'discord.join': { ja: '参加する', en: 'Join Now', de: 'Jetzt beitreten' },
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {

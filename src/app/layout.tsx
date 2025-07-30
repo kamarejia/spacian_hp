@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import SpaceBackground from '@/components/SpaceBackground'
+import DiscordFloatingButton from '@/components/DiscordFloatingButton'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const orbitron = Orbitron({
@@ -44,6 +45,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <DiscordFloatingButton />
         </LanguageProvider>
       </body>
     </html>
