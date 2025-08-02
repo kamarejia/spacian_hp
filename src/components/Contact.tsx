@@ -107,7 +107,7 @@ export default function Contact() {
             
             <div className="text-center lg:text-left">
               <a
-                href="#"
+                href={socialLinks.googleForm}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="space-button text-lg font-semibold"

@@ -297,15 +297,18 @@ const translations: TranslationData = {
   
   // Discord Floating Button
   'discord.tooltip': { ja: 'Discord開発コミュニティ', en: 'Discord Dev Community', de: 'Discord-Entwickler-Community' },
-  'discord.title': { ja: 'Discord開発コミュニティ', en: 'Discord Dev Community', de: 'Discord-Entwickler-Community' },
+  'discord.title': { ja: 'Discordコミュニティ-LEMO Lab', en: 'Discord Community-LEMO Lab', de: 'Discord-Community-LEMO Lab' },
   'discord.message': { 
     ja: 'あなたの「面白そう！」が助けになります✨', 
     en: 'Your "That sounds interesting!" helps us✨', 
     de: 'Ihr "Das klingt interessant!" hilft uns✨' 
   },
-  'discord.benefit1': { ja: '新機能の先行体験', en: 'Early access to new features', de: 'Früher Zugang zu neuen Funktionen' },
-  'discord.benefit2': { ja: '開発チームへのフィードバック', en: 'Feedback to dev team', de: 'Feedback an das Entwicklungsteam' },
-  'discord.benefit3': { ja: 'β版テストへのご招待', en: 'Beta testing invitation', de: 'Einladung zu Beta-Tests' },
+  'discord.benefit1': { ja: 'ボードゲームやデジタルゲーム好き同士の交流', en: 'Connect with board game and digital game enthusiasts', de: 'Verbindung mit Brett- und Digitalspielfans' },
+  'discord.benefit2': { ja: 'レモを応援', en: 'Support Lemo', de: 'Lemo unterstützen' },
+  'discord.benefit3': { ja: 'Project: LEMO のテストプレイ', en: 'Project: LEMO test play', de: 'Project: LEMO Testspiel' },
+  'discord.benefit1.desc': { ja: 'オンラインでもオフラインでも定期的にゲームをしましょう', en: 'Let\'s play games regularly, both online and offline', de: 'Lassen Sie uns regelmäßig Spiele spielen, sowohl online als auch offline' },
+  'discord.benefit2.desc': { ja: '開発へのアドバイスや欲しい機能の要望ができます', en: 'You can give development advice and request desired features', de: 'Sie können Entwicklungsratschläge geben und gewünschte Funktionen anfordern' },
+  'discord.benefit3.desc': { ja: '開発版を先行体験できます', en: 'You can experience the development version in advance', de: 'Sie können die Entwicklungsversion im Voraus erleben' },
   'discord.join': { ja: '参加する', en: 'Join Now', de: 'Jetzt beitreten' },
 }
 

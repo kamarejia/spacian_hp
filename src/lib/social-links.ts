@@ -13,8 +13,8 @@ export const socialLinks = {
     website: '#', // 開発中
     discord: '#' // Discord開発コミュニティ（今後設定予定）
   },
-  discord: '#', // 今後設定予定
-  googleForm: '#' // Google Form URL（今後設定予定）
+  discord: 'https://discord.gg/gMjGnFsAY6',
+  googleForm: 'https://docs.google.com/forms/d/e/1FAIpQLSc6S8Ptem82a6vHuNnVp0EyS0fH-I0aMaOoq4EzjZX_Vlsg4w/viewform?usp=dialog'
 } as const
 
 export type SocialPlatform = 'x' | 'instagram' | 'note' | 'website'

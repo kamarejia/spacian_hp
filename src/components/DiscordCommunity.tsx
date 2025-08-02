@@ -5,17 +5,18 @@ import { socialLinks } from '@/lib/social-links'
 import { 
   HiChatBubbleLeftRight, 
   HiRocketLaunch, 
-  HiSparkles, 
-  HiPuzzlePiece 
+  HiUserGroup, 
+  HiHeart,
+  HiCommandLine 
 } from 'react-icons/hi2'
 
 export default function DiscordCommunity() {
   const { t } = useLanguage()
   
   const benefits = [
-    { icon: HiSparkles, textKey: 'discord.benefit1' },
-    { icon: HiChatBubbleLeftRight, textKey: 'discord.benefit2' },
-    { icon: HiPuzzlePiece, textKey: 'discord.benefit3' }
+    { icon: HiUserGroup, textKey: 'discord.benefit1', descKey: 'discord.benefit1.desc' },
+    { icon: HiHeart, textKey: 'discord.benefit2', descKey: 'discord.benefit2.desc' },
+    { icon: HiCommandLine, textKey: 'discord.benefit3', descKey: 'discord.benefit3.desc' }
   ]
 
   return (
@@ -33,9 +34,12 @@ export default function DiscordCommunity() {
       <div className="mb-6 flex justify-center">
         <div className="space-y-4">
           {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-center gap-3 text-white">
-              <benefit.icon className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-              <span className="text-lg font-medium">{t(benefit.textKey)}</span>
+            <div key={index} className="text-white">
+              <div className="flex items-center gap-3 mb-1">
+                <benefit.icon className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+                <span className="text-lg font-medium">{t(benefit.textKey)}</span>
+              </div>
+              <p className="text-sm text-gray-300 ml-9">{t(benefit.descKey)}</p>
             </div>
           ))}
         </div>
